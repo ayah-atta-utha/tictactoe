@@ -1,0 +1,95 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    /* width: 300px; */
+}
+
+/* Header styles */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input field and button styling */
+.input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.start-btn {
+    width: 80%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.start-btn:hover {
+    background-color: #45a049;
+}
+
+/* Board styling */
+.board {
+    display: grid;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.cell {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.cell:active {
+    background-color: #ddd;
+}
+
+/* Add animations and visual effects */
+.board {
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 250px;
+    }
+}
+#board{
+    justify-content: center;
+}
